@@ -1,0 +1,75 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-concrete}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+\usepackage{import}
+
+%  Personal Data
+\name{Anubhav }{Satpathy}
+\position{Second Year Undergraduate{\enskip\cdotp\enskip}Electrical Engineering}
+\address{Indian Institute of Technology, Kanpur}
+\mobile{(+91) 8895215617} 
+\email{asatpath@iitk.ac.in}
+\github{Anubhav-Satpathy}
+
+% \homepage{}
+% \linkedin{Anubhav Satpathy}
+% \quote{}
+
+
+
+\makecvfooter
+  {\today}
+  {Anubhav Satpathy~~~·~~~Resume}
+  {\thepage}
+
+\begin{document}
+
+\makecvheader
+
+\input{sections/education.tex}
+\input{sections/achievements.tex}
+% \import{\sectiondir}{extracurricular.tex}  work out
+% \import{\sectiondir}{presentation.tex}     work out
+% \import{\sectiondir}{writing.tex}          work out
+% \import{\sectiondir}{committees.tex}       work out
+
+\end{document}
